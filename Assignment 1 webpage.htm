@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<!-- saved from url=(0087)https://e0e2d73929c749f7bb96bca8ca537ee9.app.rstudio.cloud/pdf_js/web/viewer.html?file= -->
+<html dir="ltr" mozdisallowselectionprint="" moznomarginboxes=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="google" content="notranslate">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>RStudio: View PDF</title>
+
+
+    <link rel="stylesheet" href="./Assignment 1 webpage_files/viewer.css">
+
+    <script src="./Assignment 1 webpage_files/compatibility.js"></script>
+
+
+
+<!-- This snippet is used in production (included from viewer.html) -->
+<link rel="resource" type="application/l10n" href="https://e0e2d73929c749f7bb96bca8ca537ee9.app.rstudio.cloud/pdf_js/web/locale/locale.properties">
+<script src="./Assignment 1 webpage_files/l10n.js"></script>
+<script src="./Assignment 1 webpage_files/pdf.js"></script>
+
+
+
+    <script src="./Assignment 1 webpage_files/debugger.js"></script>
+    <script src="./Assignment 1 webpage_files/viewer.js"></script>
+
+  <link rel="stylesheet" href="./Assignment 1 webpage_files/viewer-rstudio.css"></head>
+
+  <body tabindex="1" class="">
+    <div id="outerContainer" class="sidebarOpen">
+
+      <div id="sidebarContainer">
+        <div id="toolbarSidebar">
+          <div class="splitToolbarButton toggled">
+            <button id="viewThumbnail" class="toolbarButton group toggled" title="Show Thumbnails" tabindex="2" data-l10n-id="thumbs">
+               <span data-l10n-id="thumbs_label">Thumbnails</span>
+            </button>
+            <button id="viewOutline" class="toolbarButton group" title="Show Document Outline" tabindex="3" data-l10n-id="outline">
+               <span data-l10n-id="outline_label">Document Outline</span>
+            </button>
+            <button id="viewAttachments" class="toolbarButton group" title="Show Attachments" tabindex="4" data-l10n-id="attachments" disabled="">
+               <span data-l10n-id="attachments_label">Attachments</span>
+            </button>
+          </div>
+        </div>
+        <div id="sidebarContent">
+          <div id="thumbnailView">
+          <a href="https://e0e2d73929c749f7bb96bca8ca537ee9.app.rstudio.cloud/pdf_js/web/viewer.html?file=#page=1" title="Page 1"><div id="thumbnailContainer1" class="thumbnail selected" data-loaded="true"><div class="thumbnailSelectionRing" style="width: 100px; height: 128px;"><img id="thumbnail1" class="thumbnailImage" aria-label="Thumbnail of Page 1" src="data:image/png;base64,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" style="width: 98px; height: 126px;"></div></div></a></div>
+          <div id="outlineView" class="hidden"><div class="outlineItem"><a href="https://e0e2d73929c749f7bb96bca8ca537ee9.app.rstudio.cloud/pdf_js/web/viewer.html?file=#section*.1">R Markdown</a></div><div class="outlineItem"><a href="https://e0e2d73929c749f7bb96bca8ca537ee9.app.rstudio.cloud/pdf_js/web/viewer.html?file=#section*.2">Including Plots</a></div></div>
+          <div id="attachmentsView" class="hidden"></div>
+        </div>
+      </div>  <!-- sidebarContainer -->
+
+      <div id="mainContainer">
+        <div class="findbar hidden doorHanger hiddenSmallView" id="findbar">
+          <label for="findInput" class="toolbarLabel" data-l10n-id="find_label">Find:</label>
+          <input id="findInput" class="toolbarField" tabindex="91">
+          <div class="splitToolbarButton">
+            <button class="toolbarButton findPrevious" title="Find the previous occurrence of the phrase" id="findPrevious" tabindex="92" data-l10n-id="find_previous">
+              <span data-l10n-id="find_previous_label">Previous</span>
+            </button>
+            <div class="splitToolbarButtonSeparator"></div>
+            <button class="toolbarButton findNext" title="Find the next occurrence of the phrase" id="findNext" tabindex="93" data-l10n-id="find_next">
+              <span data-l10n-id="find_next_label">Next</span>
+            </button>
+          </div>
+          <input type="checkbox" id="findHighlightAll" class="toolbarField" tabindex="94">
+          <label for="findHighlightAll" class="toolbarLabel" data-l10n-id="find_highlight">Highlight all</label>
+          <input type="checkbox" id="findMatchCase" class="toolbarField" tabindex="95">
+          <label for="findMatchCase" class="toolbarLabel" data-l10n-id="find_match_case_label">Match case</label>
+          <span id="findResultsCount" class="toolbarLabel hidden"></span>
+          <span id="findMsg" class="toolbarLabel"></span>
+        </div>  <!-- findbar -->
+
+        <div id="secondaryToolbar" class="secondaryToolbar hidden doorHangerRight">
+          <div id="secondaryToolbarButtonContainer" style="max-height: 779px;">
+            <button id="secondaryPresentationMode" class="secondaryToolbarButton presentationMode visibleLargeView" title="Switch to Presentation Mode" tabindex="51" data-l10n-id="presentation_mode">
+              <span data-l10n-id="presentation_mode_label">Presentation Mode</span>
+            </button>
+
+            <button id="secondaryOpenFile" class="secondaryToolbarButton openFile visibleLargeView" title="Open File" tabindex="52" data-l10n-id="open_file" hidden="true">
+              <span data-l10n-id="open_file_label">Open</span>
+            </button>
+
+            <button id="secondaryPrint" class="secondaryToolbarButton print visibleMediumView" title="Print" tabindex="53" data-l10n-id="print">
+              <span data-l10n-id="print_label">Print</span>
+            </button>
+
+            <button id="secondaryDownload" class="secondaryToolbarButton download visibleMediumView" title="Download" tabindex="54" data-l10n-id="download">
+              <span data-l10n-id="download_label">Download</span>
+            </button>
+
+            <a href="https://e0e2d73929c749f7bb96bca8ca537ee9.app.rstudio.cloud/pdf_js/web/viewer.html?file=#page=1&amp;zoom=auto,-15,792" id="secondaryViewBookmark" class="secondaryToolbarButton bookmark visibleSmallView" title="Current view (copy or open in new window)" tabindex="55" data-l10n-id="bookmark">
+              <span data-l10n-id="bookmark_label">Current View</span>
+            </a>
+
+            <div class="horizontalToolbarSeparator visibleLargeView"></div>
+
+            <button id="firstPage" class="secondaryToolbarButton firstPage" title="Go to First Page" tabindex="56" data-l10n-id="first_page" disabled="">
+              <span data-l10n-id="first_page_label">Go to First Page</span>
+            </button>
+            <button id="lastPage" class="secondaryToolbarButton lastPage" title="Go to Last Page" tabindex="57" data-l10n-id="last_page" disabled="">
+              <span data-l10n-id="last_page_label">Go to Last Page</span>
+            </button>
+
+            <div class="horizontalToolbarSeparator"></div>
+
+            <button id="pageRotateCw" class="secondaryToolbarButton rotateCw" title="Rotate Clockwise" tabindex="58" data-l10n-id="page_rotate_cw">
+              <span data-l10n-id="page_rotate_cw_label">Rotate Clockwise</span>
+            </button>
+            <button id="pageRotateCcw" class="secondaryToolbarButton rotateCcw" title="Rotate Counterclockwise" tabindex="59" data-l10n-id="page_rotate_ccw">
+              <span data-l10n-id="page_rotate_ccw_label">Rotate Counterclockwise</span>
+            </button>
+
+            <div class="horizontalToolbarSeparator"></div>
+
+            <button id="toggleHandTool" class="secondaryToolbarButton handTool" title="Enable hand tool" tabindex="60" data-l10n-id="hand_tool_enable">
+              <span data-l10n-id="hand_tool_enable_label">Enable hand tool</span>
+            </button>
+
+            <div class="horizontalToolbarSeparator"></div>
+
+            <button id="documentProperties" class="secondaryToolbarButton documentProperties" title="Document Properties…" tabindex="61" data-l10n-id="document_properties">
+              <span data-l10n-id="document_properties_label">Document Properties…</span>
+            </button>
+          </div>
+        </div>  <!-- secondaryToolbar -->
+
+        <div class="toolbar">
+          <div id="toolbarContainer">
+            <div id="toolbarViewer">
+              <div id="toolbarViewerLeft">
+                <button id="sidebarToggle" class="toolbarButton toggled" title="Toggle Sidebar" tabindex="11" data-l10n-id="toggle_sidebar">
+                  <span data-l10n-id="toggle_sidebar_label">Toggle Sidebar</span>
+                </button>
+                <div class="toolbarButtonSpacer"></div>
+                <button id="viewFind" class="toolbarButton group hiddenSmallView" title="Find in Document" tabindex="12" data-l10n-id="findbar">
+                   <span data-l10n-id="findbar_label">Find</span>
+                </button>
+                <div class="splitToolbarButton">
+                  <button class="toolbarButton pageUp" title="Previous Page" id="previous" tabindex="13" data-l10n-id="previous" disabled="">
+                    <span data-l10n-id="previous_label">Previous</span>
+                  </button>
+                  <div class="splitToolbarButtonSeparator"></div>
+                  <button class="toolbarButton pageDown" title="Next Page" id="next" tabindex="14" data-l10n-id="next" disabled="">
+                    <span data-l10n-id="next_label">Next</span>
+                  </button>
+                </div>
+                <label id="pageNumberLabel" class="toolbarLabel" for="pageNumber" data-l10n-id="page_label">Page:</label>
+                <input type="number" id="pageNumber" class="toolbarField pageNumber" value="1" size="4" min="1" tabindex="15" max="1">
+                <span id="numPages" class="toolbarLabel">of 1</span>
+              </div>
+              <div id="toolbarViewerRight"><button class="toolbarButton" id="jumpToSource" title="Sync editor location to PDF view"><span>Jump to Source Location</span></button>
+                <button id="presentationMode" class="toolbarButton presentationMode hiddenLargeView" title="Switch to Presentation Mode" tabindex="31" data-l10n-id="presentation_mode">
+                  <span data-l10n-id="presentation_mode_label">Presentation Mode</span>
+                </button>
+
+                <button id="openFile" class="toolbarButton openFile hiddenLargeView" title="Open File" tabindex="32" data-l10n-id="open_file" hidden="true">
+                  <span data-l10n-id="open_file_label">Open</span>
+                </button>
+
+                <button id="print" class="toolbarButton print hiddenMediumView" title="Print" tabindex="33" data-l10n-id="print">
+                  <span data-l10n-id="print_label">Print</span>
+                </button>
+
+                <button id="download" class="toolbarButton download hiddenMediumView" title="Download" tabindex="34" data-l10n-id="download">
+                  <span data-l10n-id="download_label">Download</span>
+                </button>
+                <a href="https://e0e2d73929c749f7bb96bca8ca537ee9.app.rstudio.cloud/pdf_js/web/viewer.html?file=#page=1&amp;zoom=auto,-15,792" id="viewBookmark" class="toolbarButton bookmark hiddenSmallView" title="Current view (copy or open in new window)" tabindex="35" data-l10n-id="bookmark" hidden="true">
+                  <span data-l10n-id="bookmark_label">Current View</span>
+                </a>
+
+                <div class="verticalToolbarSeparator hiddenSmallView"></div>
+
+                <button id="secondaryToolbarToggle" class="toolbarButton" title="Tools" tabindex="36" data-l10n-id="tools">
+                  <span data-l10n-id="tools_label">Tools</span>
+                </button>
+              </div>
+              <div class="outerCenter">
+                <div class="innerCenter" id="toolbarViewerMiddle">
+                  <div class="splitToolbarButton">
+                    <button id="zoomOut" class="toolbarButton zoomOut" title="Zoom Out" tabindex="21" data-l10n-id="zoom_out">
+                      <span data-l10n-id="zoom_out_label">Zoom Out</span>
+                    </button>
+                    <div class="splitToolbarButtonSeparator"></div>
+                    <button id="zoomIn" class="toolbarButton zoomIn" title="Zoom In" tabindex="22" data-l10n-id="zoom_in">
+                      <span data-l10n-id="zoom_in_label">Zoom In</span>
+                     </button>
+                  </div>
+                  <span id="scaleSelectContainer" class="dropdownToolbarButton" style="min-width: 120px; max-width: 120px;">
+                     <select id="scaleSelect" title="Zoom" tabindex="23" data-l10n-id="zoom" style="min-width: 142px;">
+                      <option id="pageAutoOption" title="" value="auto" selected="selected" data-l10n-id="page_scale_auto">Automatic Zoom</option>
+                      <option id="pageActualOption" title="" value="page-actual" data-l10n-id="page_scale_actual">Actual Size</option>
+                      <option id="pageFitOption" title="" value="page-fit" data-l10n-id="page_scale_fit">Page Fit</option>
+                      <option id="pageWidthOption" title="" value="page-width" data-l10n-id="page_scale_width">Page Width</option>
+                      <option id="customScaleOption" title="" value="custom"></option>
+                      <option title="" value="0.5" data-l10n-id="page_scale_percent" data-l10n-args="{ &quot;scale&quot;: 50 }">50%</option>
+                      <option title="" value="0.75" data-l10n-id="page_scale_percent" data-l10n-args="{ &quot;scale&quot;: 75 }">75%</option>
+                      <option title="" value="1" data-l10n-id="page_scale_percent" data-l10n-args="{ &quot;scale&quot;: 100 }">100%</option>
+                      <option title="" value="1.25" data-l10n-id="page_scale_percent" data-l10n-args="{ &quot;scale&quot;: 125 }">125%</option>
+                      <option title="" value="1.5" data-l10n-id="page_scale_percent" data-l10n-args="{ &quot;scale&quot;: 150 }">150%</option>
+                      <option title="" value="2" data-l10n-id="page_scale_percent" data-l10n-args="{ &quot;scale&quot;: 200 }">200%</option>
+                      <option title="" value="3" data-l10n-id="page_scale_percent" data-l10n-args="{ &quot;scale&quot;: 300 }">300%</option>
+                      <option title="" value="4" data-l10n-id="page_scale_percent" data-l10n-args="{ &quot;scale&quot;: 400 }">400%</option>
+                    </select>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div id="loadingBar" class="hidden">
+              <div class="progress indeterminate" style="height: 100%; width: 100%;">
+                <div class="glimmer">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <menu type="context" id="viewerContextMenu">
+          <menuitem id="contextFirstPage" label="First Page" data-l10n-id="first_page" title="Go to First Page"></menuitem>
+          <menuitem id="contextLastPage" label="Last Page" data-l10n-id="last_page" title="Go to Last Page"></menuitem>
+          <menuitem id="contextPageRotateCw" label="Rotate Clockwise" data-l10n-id="page_rotate_cw" title="Rotate Clockwise"></menuitem>
+          <menuitem id="contextPageRotateCcw" label="Rotate Counter-Clockwise" data-l10n-id="page_rotate_ccw" title="Rotate Counterclockwise"></menuitem>
+        </menu>
+
+        <div id="viewerContainer" tabindex="0">
+          <div id="viewer" class="pdfViewer"><div id="pageContainer1" class="page" data-page-number="1" style="width: 829px; height: 1074px;" data-loaded="true"><div class="canvasWrapper" style="width: 829px; height: 1074px;"><canvas id="page1" width="830" height="1075" style="width: 830px; height: 1075px;"></canvas></div><div class="textLayer" style="width: 829px; height: 1074px;"><div data-canvas-width="126.29695645555553" style="left: 351.855px; top: 151.96px; font-size: 23.3477px; font-family: sans-serif; transform: scaleX(0.893142);">Assignment 1</div><div data-canvas-width="104.99214870588233" style="left: 97.6471px; top: 225.218px; font-size: 16.2138px; font-family: sans-serif; transform: scaleX(1.15397);">R Markdown</div><div data-canvas-width="635.1881696370456" style="left: 97.1602px; top: 251.939px; font-size: 13.5114px; font-family: sans-serif; transform: scaleX(1.01191);">This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and</div><div data-canvas-width="579.0445930454248" style="left: 97.6471px; top: 268.152px; font-size: 13.5114px; font-family: sans-serif; transform: scaleX(1.01115);">MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.</div><div data-canvas-width="117.64384362566666" style="left: 96.9581px; top: 292.473px; font-size: 13.5114px; font-family: sans-serif; transform: scaleX(1.03757);">When you click the</div><div data-canvas-width="31.170728931372544" style="left: 219.483px; top: 292.338px; font-size: 13.5114px; font-family: sans-serif; transform: scaleX(1.33897);">Knit</div><div data-canvas-width="476.81981595233333" style="left: 255.537px; top: 292.473px; font-size: 13.5114px; font-family: sans-serif; transform: scaleX(1.034);">button a document will be generated that includes both content as well as the</div><div data-canvas-width="621.670260853268" style="left: 97.6471px; top: 308.686px; font-size: 13.5114px; font-family: sans-serif; transform: scaleX(1.00051);">output of any embedded R code chunks within the document. You can embed an R code chunk like this:</div><div data-canvas-width="92.21509534313724" style="left: 97.6471px; top: 331.446px; font-size: 13.5114px; font-family: monospace; transform: scaleX(0.874947);">summary(cars)</div><div data-canvas-width="198.61712843137252" style="left: 97.6471px; top: 362.823px; font-size: 13.5114px; font-family: monospace; transform: scaleX(0.874947);">##      speed           dist</div><div data-canvas-width="234.08447279411763" style="left: 97.6471px; top: 379.037px; font-size: 13.5114px; font-family: monospace; transform: scaleX(0.874947);">##  Min.   : 4.0   Min.   :  2.00</div><div data-canvas-width="234.08447279411766" style="left: 97.6471px; top: 395.25px; font-size: 13.5114px; font-family: monospace; transform: scaleX(0.874947);">##  1st Qu.:12.0   1st Qu.: 26.00</div><div data-canvas-width="234.08447279411766" style="left: 97.6471px; top: 411.464px; font-size: 13.5114px; font-family: monospace; transform: scaleX(0.874947);">##  Median :15.0   Median : 36.00</div><div data-canvas-width="234.08447279411763" style="left: 97.6471px; top: 427.677px; font-size: 13.5114px; font-family: monospace; transform: scaleX(0.874947);">##  Mean   :15.4   Mean   : 42.98</div><div data-canvas-width="234.08447279411766" style="left: 97.6471px; top: 443.892px; font-size: 13.5114px; font-family: monospace; transform: scaleX(0.874947);">##  3rd Qu.:19.0   3rd Qu.: 56.00</div><div data-canvas-width="234.08447279411757" style="left: 97.6471px; top: 460.105px; font-size: 13.5114px; font-family: monospace; transform: scaleX(0.874947);">##  Max.   :25.0   Max.   :120.00</div><div data-canvas-width="121.70366251503266" style="left: 97.6471px; top: 494.93px; font-size: 16.2138px; font-family: sans-serif; transform: scaleX(1.15437);">Including Plots</div><div data-canvas-width="232.13478220686272" style="left: 97.1331px; top: 521.651px; font-size: 13.5114px; font-family: sans-serif; transform: scaleX(0.983336);">You can also embed plots, for example:</div><div style="left: 184.083px; top: 823.087px; font-size: 16.2753px; font-family: sans-serif;">0</div><div data-canvas-width="18.098159764705883" style="left: 245.617px; top: 823.087px; font-size: 16.2753px; font-family: sans-serif; transform: scaleX(1.00005);">50</div><div data-canvas-width="27.14723964705883" style="left: 307.151px; top: 823.087px; font-size: 16.2753px; font-family: sans-serif; transform: scaleX(1.00005);">100</div><div data-canvas-width="27.14723964705883" style="left: 373.202px; top: 823.087px; font-size: 16.2753px; font-family: sans-serif; transform: scaleX(1.00005);">150</div><div data-canvas-width="27.14723964705883" style="left: 439.253px; top: 823.087px; font-size: 16.2753px; font-family: sans-serif; transform: scaleX(1.00005);">200</div><div data-canvas-width="27.14723964705883" style="left: 505.317px; top: 823.087px; font-size: 16.2753px; font-family: sans-serif; transform: scaleX(1.00005);">250</div><div data-canvas-width="27.14723964705883" style="left: 571.367px; top: 823.087px; font-size: 16.2753px; font-family: sans-serif; transform: scaleX(1.00005);">300</div><div data-canvas-width="27.14723964705883" style="left: 637.418px; top: 823.087px; font-size: 16.2753px; font-family: sans-serif; transform: scaleX(1.00005);">350</div><div data-angle="-90" style="left: 129.872px; top: 799.108px; font-size: 16.2753px; font-family: sans-serif; transform: rotate(-90deg);">0</div><div data-angle="-90" data-canvas-width="27.14723964705883" style="left: 129.872px; top: 748.478px; font-size: 16.2753px; font-family: sans-serif; transform: rotate(-90deg) scaleX(1.00005);">200</div><div data-angle="-90" data-canvas-width="27.14723964705883" style="left: 129.872px; top: 688.802px; font-size: 16.2753px; font-family: sans-serif; transform: rotate(-90deg) scaleX(1.00005);">400</div><div data-angle="-90" data-canvas-width="27.14723964705883" style="left: 129.872px; top: 629.112px; font-size: 16.2753px; font-family: sans-serif; transform: rotate(-90deg) scaleX(1.00005);">600</div><div data-angle="-90" data-canvas-width="27.14723964705883" style="left: 129.872px; top: 569.436px; font-size: 16.2753px; font-family: sans-serif; transform: rotate(-90deg) scaleX(1.00005);">800</div><div data-canvas-width="87.57752404901962" style="left: 382.614px; top: 862.148px; font-size: 16.2753px; font-family: sans-serif; transform: scaleX(0.998361);">temperature</div><div data-angle="-90" data-canvas-width="63.31100852941178" style="left: 90.8114px; top: 705.986px; font-size: 16.2753px; font-family: sans-serif; transform: rotate(-90deg) scaleX(1.00017);">pressure</div><div data-canvas-width="79.7849544728902" style="left: 97.6471px; top: 897.124px; font-size: 13.5114px; font-family: sans-serif; transform: scaleX(1.03136);">Note that the</div><div data-canvas-width="85.12162647058823" style="left: 181.956px; top: 898.34px; font-size: 13.5114px; font-family: monospace; transform: scaleX(0.874947);">echo = FALSE</div><div data-canvas-width="461.12257734900004" style="left: 271.596px; top: 897.124px; font-size: 13.5114px; font-family: sans-serif; transform: scaleX(0.995121);">parameter was added to the code chunk to prevent printing of the R code that</div><div data-canvas-width="111.87954219477122" style="left: 97.6471px; top: 913.337px; font-size: 13.5114px; font-family: sans-serif; transform: scaleX(0.992974);">generated the plot.</div><div style="left: 411.622px; top: 1007.7px; font-size: 13.5114px; font-family: sans-serif;">1</div><div class="endOfContent"></div></div><div class="annotationLayer"><section data-annotation-id="4R" class="linkAnnotation" style="transform: matrix(1.35621, 0, 0, 1.35621, 0, 0); transform-origin: -360.529px -196.118px; left: 360.529px; top: 196.118px; width: 136.656px; height: 11.955px;"><a title="http://rmarkdown.rstudio.com" href="http://rmarkdown.rstudio.com/" rel="noreferrer"></a></section></div></div></div>
+        </div>
+
+        <div id="errorWrapper" hidden="true">
+          <div id="errorMessageLeft">
+            <span id="errorMessage"></span>
+            <button id="errorShowMore" data-l10n-id="error_more_info">More Information</button>
+            <button id="errorShowLess" data-l10n-id="error_less_info" hidden="true">Less Information</button>
+          </div>
+          <div id="errorMessageRight">
+            <button id="errorClose" data-l10n-id="error_close">Close</button>
+          </div>
+          <div class="clearBoth"></div>
+          <textarea id="errorMoreInfo" hidden="true" readonly="readonly"></textarea>
+        </div>
+      </div> <!-- mainContainer -->
+
+      <div id="overlayContainer" class="hidden">
+        <div id="passwordOverlay" class="container hidden">
+          <div class="dialog">
+            <div class="row">
+              <p id="passwordText" data-l10n-id="password_label">Enter the password to open this PDF file.</p>
+            </div>
+            <div class="row">
+              <input type="password" id="password" class="toolbarField">
+            </div>
+            <div class="buttonRow">
+              <button id="passwordCancel" class="overlayButton"><span data-l10n-id="password_cancel">Cancel</span></button>
+              <button id="passwordSubmit" class="overlayButton"><span data-l10n-id="password_ok">OK</span></button>
+            </div>
+          </div>
+        </div>
+        <div id="documentPropertiesOverlay" class="container hidden">
+          <div class="dialog">
+            <div class="row">
+              <span data-l10n-id="document_properties_file_name">File name:</span> <p id="fileNameField">-</p>
+            </div>
+            <div class="row">
+              <span data-l10n-id="document_properties_file_size">File size:</span> <p id="fileSizeField">-</p>
+            </div>
+            <div class="separator"></div>
+            <div class="row">
+              <span data-l10n-id="document_properties_title">Title:</span> <p id="titleField">-</p>
+            </div>
+            <div class="row">
+              <span data-l10n-id="document_properties_author">Author:</span> <p id="authorField">-</p>
+            </div>
+            <div class="row">
+              <span data-l10n-id="document_properties_subject">Subject:</span> <p id="subjectField">-</p>
+            </div>
+            <div class="row">
+              <span data-l10n-id="document_properties_keywords">Keywords:</span> <p id="keywordsField">-</p>
+            </div>
+            <div class="row">
+              <span data-l10n-id="document_properties_creation_date">Creation Date:</span> <p id="creationDateField">-</p>
+            </div>
+            <div class="row">
+              <span data-l10n-id="document_properties_modification_date">Modification Date:</span> <p id="modificationDateField">-</p>
+            </div>
+            <div class="row">
+              <span data-l10n-id="document_properties_creator">Creator:</span> <p id="creatorField">-</p>
+            </div>
+            <div class="separator"></div>
+            <div class="row">
+              <span data-l10n-id="document_properties_producer">PDF Producer:</span> <p id="producerField">-</p>
+            </div>
+            <div class="row">
+              <span data-l10n-id="document_properties_version">PDF Version:</span> <p id="versionField">-</p>
+            </div>
+            <div class="row">
+              <span data-l10n-id="document_properties_page_count">Page Count:</span> <p id="pageCountField">-</p>
+            </div>
+            <div class="buttonRow">
+              <button id="documentPropertiesClose" class="overlayButton"><span data-l10n-id="document_properties_close">Close</span></button>
+            </div>
+          </div>
+        </div>
+      </div>  <!-- overlayContainer -->
+
+    </div> <!-- outerContainer -->
+    <div id="printContainer"></div>
+<div id="mozPrintCallback-shim" hidden="">
+  <style>
+@media print {
+  #printContainer div {
+    page-break-after: always;
+    page-break-inside: avoid;
+  }
+}
+  </style>
+  <style scoped="">
+#mozPrintCallback-shim {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 9999999;
+
+  display: block;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+#mozPrintCallback-shim[hidden] {
+  display: none;
+}
+@media print {
+  #mozPrintCallback-shim {
+    display: none;
+  }
+}
+
+#mozPrintCallback-shim .mozPrintCallback-dialog-box {
+  display: inline-block;
+  margin: -50px auto 0;
+  position: relative;
+  top: 45%;
+  left: 0;
+  min-width: 220px;
+  max-width: 400px;
+
+  padding: 9px;
+
+  border: 1px solid hsla(0, 0%, 0%, .5);
+  border-radius: 2px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+
+  background-color: #474747;
+
+  color: hsl(0, 0%, 85%);
+  font-size: 16px;
+  line-height: 20px;
+}
+#mozPrintCallback-shim .progress-row {
+  clear: both;
+  padding: 1em 0;
+}
+#mozPrintCallback-shim progress {
+  width: 100%;
+}
+#mozPrintCallback-shim .relative-progress {
+  clear: both;
+  float: right;
+}
+#mozPrintCallback-shim .progress-actions {
+  clear: both;
+}
+  </style>
+  <div class="mozPrintCallback-dialog-box">
+    <!-- TODO: Localise the following strings -->
+    Preparing document for printing...
+    <div class="progress-row">
+      <progress value="0" max="100"></progress>
+      <span class="relative-progress">0%</span>
+    </div>
+    <div class="progress-actions">
+      <input type="button" value="Cancel" class="mozPrintCallback-cancel">
+    </div>
+  </div>
+</div>
+
+  
+
+
+<input id="fileInput" class="fileInput" type="file"></body></html>
